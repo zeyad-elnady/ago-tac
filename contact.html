@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
 <meta charset="utf-8">
-<title>Contact Us - AgoTac</title>
+<title>اتصل بنا - AGO TAC</title>
 <!-- Stylesheets -->
 <link href="assets/css/bootstrap.css" rel="stylesheet">
 <link href="assets/css/elpath.css" rel="stylesheet">
@@ -27,7 +27,7 @@
 <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
 </head>
 
-<body>
+<body class="rtl">
 
 <div class="preloader"></div>
 
@@ -74,18 +74,18 @@
                             <nav class="main-menu navbar-expand-md navbar-light">
                                 <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
                                     <ul class="navigation">
-                                        <li><a href="index-2.html">Home</a></li>
-                                        <li><a href="about.html">About Us</a></li>
-                                        <li><a href="blog.html">Products & Quality</a></li>
-                                        <li><a href="blog-details.html">Our Customers</a></li>
-                                        <li><a href="contact.html">Contact</a></li>
+                                        <li><a href="index.html" data-i18n="nav_home">الرئيسية</a></li>
+                                        <li><a href="about.html" data-i18n="nav_about">من نحن</a></li>
+                                        <li><a href="blog.html" data-i18n="nav_products">المنتجات والجودة</a></li>
+                                        <li><a href="blog-details.html" data-i18n="nav_customers">عملاؤنا</a></li>
+                                        <li><a href="contact.html" data-i18n="nav_contact">اتصل بنا</a></li>
                                     </ul>
                                 </div>
                             </nav>
                         </div>
                         <div class="navbar-right-info">
                             <div class="search-toggler"><i class="far fa-search"></i></div>
-                            <div class="link-btn"><a href="appointment.html" class="theme_btn_1 paanee_btn">Get a Quote</a></div>
+                            <div class="link-btn"><a href="#" class="theme_btn_1 paanee_btn lang-switcher">EN</a></div>
                         </div>
                     </div>                        
                 </div>
@@ -115,7 +115,7 @@
                                 </nav>
                             </div>
                             <div class="navbar-right-info">
-                                <div class="link-btn"><a href="appointment.html" class="theme_btn_1 paanee_btn">Get a Quote</a></div>
+                                <div class="link-btn"><a href="#" class="theme_btn_1 paanee_btn lang-switcher">EN</a></div>
                             </div>
                         </div>                        
                     </div>
@@ -174,11 +174,11 @@
             <div class="content-box">
                 <div class="content-wrapper">
                     <div class="title">
-                        <h1>Contact</h1>
+                        <h1 data-i18n="contact_title">اتصل بنا</h1>
                     </div>
                     <ul class="bread-crumb">
-                        <li><a href="index.html">Home </a></li>
-                        <li>Contact</li>
+                        <li><a href="index.html" data-i18n="breadcrumb_home">الرئيسية</a></li>
+                        <li data-i18n="contact_title">اتصل بنا</li>
                     </ul>
                 </div>
             </div>
@@ -199,30 +199,30 @@
                 <div class="row">
                     <div class="col-lg-7">
                         <div class="sec-title mb_30">
-                            <h2 class="fs_45 fw_sbold">Request A Quote</h2>
-                            <div class="text">We will be happy to answer your questions.</div>
+                            <h2 class="fs_45 fw_sbold" data-i18n="contact_request">طلب عرض سعر</h2>
+                            <div class="text" data-i18n="contact_request_desc">سنكون سعداء للإجابة على أسئلتك.</div>
                         </div>
                         <div class="contact-form">
                             <form method="post" action="inc/sendmail.php" id="contact-form">
                                 <div class="row">
                                     <div class="form-group col-md-6">
-                                        <input type="text" name="form_name" value="" placeholder="Your Name" required>
+                                        <input type="text" name="form_name" value="" data-i18n="contact_name" placeholder="اسمك" required>
                                     </div>
                                     <div class="form-group col-md-6">
-                                        <input type="text" name="email" value="" placeholder="Your Email" required>
+                                        <input type="text" name="email" value="" data-i18n="contact_email" placeholder="بريدك الإلكتروني" required>
                                     </div>
                                     <div class="form-group col-md-6">
-                                        <input type="text" name="form_phone" value="" placeholder="Phone" required>
+                                        <input type="text" name="form_phone" value="" data-i18n="contact_phone" placeholder="الهاتف" required>
                                     </div>
                                     <div class="form-group col-md-6">
-                                        <input type="text" name="form_subject" value="" placeholder="Subject" required>
+                                        <input type="text" name="form_subject" value="" data-i18n="contact_subject" placeholder="الموضوع" required>
                                     </div>
                                     <div class="form-group col-md-12">
-                                        <textarea name="form_message" placeholder="Massage"></textarea>
+                                        <textarea name="form_message" data-i18n="contact_message" placeholder="الرسالة"></textarea>
                                     </div>
                                     <div class="form-group col-md-12">
                                         <input id="form_botcheck" name="form_botcheck" class="form-control" type="hidden" value="">
-                                        <button class="theme_btn_1 paanee_btn" type="submit" data-loading-text="Please wait..."><span>Send Message <i class="flaticon-next"></i></span></button>
+                                        <button class="theme_btn_1 paanee_btn" type="submit" data-loading-text="Please wait..."><span data-i18n="contact_send">إرسال الرسالة <i class="flaticon-next"></i></span></button>
                                     </div>
                                 </div>
                             </form>
@@ -230,7 +230,7 @@
                     </div>
                     <div class="col-lg-5">
                         <div class="contact-info theme_bg px_30 pt_40 pb_1">
-                            <h3 class="title fs_30 fw_bold color_white mb_30">Contact Us</h3>
+                            <h3 class="title fs_30 fw_bold color_white mb_30" data-i18n="footer_contact">اتصل بنا</h3>
                             <div class="contact-info">
                                 <ul class="list color_white">
                                     <li class="mb_45 flexbox_1">
@@ -238,7 +238,7 @@
                                             <i class="icon-address"></i>
                                         </div>
                                         <div>
-                                            <h4 class="fs_16 fw_bold color_white mb_10">Company Address</h4>
+                                            <h4 class="fs_16 fw_bold color_white mb_10" data-i18n="contact_address">عنوان الشركة</h4>
                                             <div class="text color_white">3 El Negma St., Heliopolis, <br> Cairo, Egypt</div>
                                         </div>
                                     </li>
@@ -247,9 +247,9 @@
                                             <i class="icon-phone"></i>
                                         </div>
                                         <div>
-                                            <h4 class="fs_16 fw_bold color_white mb_10">Our Phone</h4>
-                                            <div class="text color_white">Office : <a class="color_white" href="tel:+20554486012">+20 55 4486012</a> <br> 
-                                                Mobile : <a class="color_white" href="tel:+201001420969">+20 100 142 0969</a>
+                                            <h4 class="fs_16 fw_bold color_white mb_10" data-i18n="contact_phone_label">هاتفنا</h4>
+                                            <div class="text color_white"><span data-i18n="contact_office">المكتب</span> : <a class="color_white" href="tel:+20554486012">+20 55 4486012</a> <br> 
+                                                <span data-i18n="contact_mobile">الجوال</span> : <a class="color_white" href="tel:+201001420969">+20 100 142 0969</a>
                                             </div>
                                         </div>
                                     </li>
@@ -258,8 +258,8 @@
                                             <i class="icon-email"></i>
                                         </div>
                                         <div>
-                                            <h4 class="fs_16 fw_bold color_white mb_10">Our Email</h4>
-                                            <div class="text color_white">President : <a class="color_white" href="mailto:rafik.fathy@agotac.com">rafik.fathy@agotac.com</a> <br> VP : <a class="color_white" href="mailto:ramykozman.agotac@gmail.com">ramykozman.agotac@gmail.com</a></div>
+                                            <h4 class="fs_16 fw_bold color_white mb_10" data-i18n="contact_email_label">بريدنا الإلكتروني</h4>
+                                            <div class="text color_white"><span data-i18n="contact_president">الرئيس</span> : <a class="color_white" href="mailto:rafik.fathy@agotac.com">rafik.fathy@agotac.com</a> <br> <span data-i18n="contact_vp">نائب الرئيس</span> : <a class="color_white" href="mailto:ramykozman.agotac@gmail.com">ramykozman.agotac@gmail.com</a></div>
                                         </div>
                                     </li>
                                 </ul>
@@ -418,6 +418,7 @@
 <script src="assets/js/jquery.nice-select.min.js"></script>
 
 <script src="assets/js/script.js"></script>
+<script src="assets/js/language-switcher.js"></script>
 
 
 </body>
