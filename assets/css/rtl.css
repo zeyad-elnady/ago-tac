@@ -201,8 +201,14 @@
 }
 
 .rtl .main-header.header-style-two .header-upper .logo {
-    top: 29px;
+    top: 15px;
     position: relative;
+}
+
+.rtl .main-header.header-style-two .sticky-header .header-upper .logo {
+    top: 10px;
+    position: relative;
+    transform: translateY(0);
 }
 
 .rtl .banner-section .content-box .image {
